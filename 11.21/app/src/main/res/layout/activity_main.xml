@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Article"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jeongari.com.android_parsing.MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Title"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Date"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/Reporter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Reporter"
+        android:textSize="10sp"
+        />
+
+    <ScrollView
+        android:id="@+id/artContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:clipToPadding="true">
+
+        <TextView
+            android:id="@+id/ContentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/getActionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="0dp"
+        android:text="Parsing" />
+
+</LinearLayout>
